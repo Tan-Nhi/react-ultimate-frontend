@@ -49,7 +49,7 @@ const CreateBookUncontrol = (props) => {
                 newThumbnail, mainText, author, price, quantity, category
             );
 
-            await new Promise(resolve => setTimeout(resolve, 2000));
+            await new Promise(resolve => setTimeout(resolve, 1000));
             if (resBook.data) {
                 resetAndCloseModel()
                 await loadBook();

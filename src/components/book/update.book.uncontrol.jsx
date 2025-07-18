@@ -55,7 +55,7 @@ const UpdateBookUncontrol = (props) => {
         const { id, mainText, author, price, quantity, category } = values;
         const resBook = await updateBookAPI(id, newThumbnail, mainText, author, price, quantity, category);
         setLoading(true)
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 1000));
         if (resBook.data) {
             resetAndCloseModel()
             await loadBook();
